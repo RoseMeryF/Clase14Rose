@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <EditText
+        android:id="@+id/etusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu Usuario"
+        android:minHeight="48dp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="233dp"
+        tools:layout_marginLeft="76dp"
+        tools:layout_marginRight="76dp" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="321dp"
+        tools:layout_marginLeft="76dp"
+        tools:layout_marginRight="76dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="154dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Iniciar Sesión"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:layout_marginLeft="76dp"
+        tools:layout_marginRight="76dp" />
+
+    <resources
+        android:id="@+id/resources"
+        tools:ignore="MissingConstraints">
+
+        <string android:name="etusuario">Ingrese su nombre de usuario</string>
+
+        <string android:name="etpassword">Ingrese su contraseña</string>
+
+        <string android:name="btnlogin">Iniciar sesión</string>
+
+        <string android:name="imgbonita">Descripcion</string>
+    </resources>
+
+    <ImageView
+        android:id="@+id/imgbonita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        app:srcCompat="@mipmap/determinado"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="38dp"
+        android:layout_height="62dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="529dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
